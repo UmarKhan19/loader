@@ -1,32 +1,99 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
+
 body,
 html {
+  margin: 0;
+  padding: 0;
   width: 100%;
+  background-color: black;
   height: 100%;
+  /* overflow: hidden; */
 }
 
-/* ::-webkit-scrollbar {
-  display: none;
-} */
-
-#loader {
+.preloader {
   width: 100%;
   height: 100%;
-  background-color: royalblue;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: absolute;
+  z-index: 9999;
 }
 
-.heading {
-  position: absolute;
-  font-size: 40px;
+.radar {
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
 }
 
-main {
-  width: 100%;
-  height: 100%;
+.dot {
+  width: 20px;
+  height: 20px;
   background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  display: none;
+  grid-template-columns: 1fr 1fr;
+}
+
+#loaderHeading {
+  color: wheat;
+  justify-self: start;
+  opacity: 0;
+  margin-bottom: 4rem;
+}
+
+.page {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  height: 100vh;
+  grid-column: span 2;
+  opacity: 0;
+}
+
+.page h1,
+.page p {
+  color: wheat;
+}
+
+#page2,
+#page4 {
+  grid-column-start: 2;
+}
+
+#page2 p,
+#page4 p {
+  width: 100%;
+}
+
+.page h1 {
+  font-size: 3rem;
+}
+
+.page p {
+  font-size: 1.5rem;
+  width: 50%;
 }
