@@ -3,32 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>loader</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Time Machine Preloader</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="loader">
-      <h1 id="heading1" class="heading">TechXpo</h1>
-      <h1 id="heading2" class="heading">CodeClash</h1>
-      <h1 id="heading3" class="heading">Hackathon</h1>
-      <h1 id="heading4" class="heading">TechTalks</h1>
-      <h1 id="heading5" class="heading">ByteBash</h1>
-      <h1 id="heading6" class="heading">CTF (Capture The Flag)</h1>
+    <div class="preloader">
+      <h1 id="loaderHeading">Now let's explore our past Events</h1>
+      <div class="radar">
+        <div class="dot"></div>
+      </div>
     </div>
-
-    <main></main>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <main class="content">
+      <div class="page" id="page1">
+        <h1>Event 1</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+          nesciunt deleniti porro illo eos voluptate quasi excepturi inventore
+          facilis recusandae quo odit, aperiam aspernatur. Culpa nulla dolorum
+          non doloribus recusandae esse provident dolores pariatur, officiis
+          expedita perferendis ratione repellat officia vitae reprehenderit,
+          quos omnis et voluptate harum nam incidunt quod voluptatibus? Vitae
+          provident incidunt fugiat ipsam beatae tenetur illo quod ullam. Nisi
+          odit, iusto alias repellendus omnis illo iste veritatis ea! Alias
+          dolore recusandae eos minima voluptate saepe aliquam qui repudiandae
+          aspernatur reprehenderit maiores velit necessitatibus eum perspiciatis
+          suscipit rerum, quam deserunt, neque blanditiis placeat. Pariatur
+          nulla officiis sit veritatis?
+        </p>
+      </div>
+      <div class="page" id="page2">
+        <h1>Event2</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+          nesciunt deleniti porro illo eos voluptate quasi excepturi inventore
+          facilis recusandae quo odit, aperiam aspernatur. Culpa nulla dolorum
+          non doloribus recusandae esse provident dolores pariatur, officiis
+          expedita perferendis ratione repellat officia vitae reprehenderit,
+          quos omnis et voluptate harum nam incidunt quod voluptatibus? Vitae
+          provident incidunt fugiat ipsam beatae tenetur illo quod ullam. Nisi
+          odit, iusto alias repellendus omnis illo iste veritatis ea! Alias
+          dolore recusandae eos minima voluptate saepe aliquam qui repudiandae
+          aspernatur reprehenderit maiores velit necessitatibus eum perspiciatis
+          suscipit rerum, quam deserunt, neque blanditiis placeat. Pariatur
+          nulla officiis sit veritatis?
+        </p>
+      </div>
+      <div class="page" id="page3">
+        <h1>Event3</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+          nesciunt deleniti porro illo eos voluptate quasi excepturi inventore
+          facilis recusandae quo odit, aperiam aspernatur. Culpa nulla dolorum
+          non doloribus recusandae esse provident dolores pariatur, officiis
+          expedita perferendis ratione repellat officia vitae reprehenderit,
+          quos omnis et voluptate harum nam incidunt quod voluptatibus? Vitae
+          provident incidunt fugiat ipsam beatae tenetur illo quod ullam. Nisi
+          odit, iusto alias repellendus omnis illo iste veritatis ea! Alias
+          dolore recusandae eos minima voluptate saepe aliquam qui repudiandae
+          aspernatur reprehenderit maiores velit necessitatibus eum perspiciatis
+          suscipit rerum, quam deserunt, neque blanditiis placeat. Pariatur
+          nulla officiis sit veritatis?
+        </p>
+      </div>
+      <div class="page" id="page4">
+        <h1>Event4</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+          nesciunt deleniti porro illo eos voluptate quasi excepturi inventore
+          facilis recusandae quo odit, aperiam aspernatur. Culpa nulla dolorum
+          non doloribus recusandae esse provident dolores pariatur, officiis
+          expedita perferendis ratione repellat officia vitae reprehenderit,
+          quos omnis et voluptate harum nam incidunt quod voluptatibus? Vitae
+          provident incidunt fugiat ipsam beatae tenetur illo quod ullam. Nisi
+          odit, iusto alias repellendus omnis illo iste veritatis ea! Alias
+          dolore recusandae eos minima voluptate saepe aliquam qui repudiandae
+          aspernatur reprehenderit maiores velit necessitatibus eum perspiciatis
+          suscipit rerum, quam deserunt, neque blanditiis placeat. Pariatur
+          nulla officiis sit veritatis?
+        </p>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
